@@ -1,0 +1,27 @@
+.btn-facebook, .btn-google, .btn-twitter{
+    width:32%;
+}
+.btn-facebook{
+    background: #3b5998;
+    color: #fff;
+}
+.btn-google{
+    background: #dd4b39;
+    color:#fff;
+}
+
+.btn-twitter{
+    background: #55acee;
+    color:#fff;
+}
+
+.text-center{
+    color:black;
+}
+
+.btn:hover {
+    background: rgb(16, 146, 27);
+    color: #f0f0f0;
+    box-shadow: inset 0 0 0 3px #99553a3a;
+    border-color: rgb(16, 146, 27);
+}

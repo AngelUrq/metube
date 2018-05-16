@@ -1,0 +1,30 @@
+<div class="container">
+    <label class="etiqueta">Comentarios</label>
+    <div class="actionBox">
+        <div *ngFor="let comentario of comentariosObs | async">
+                <ul class="commentList">
+                        <li>
+                            <div class="commenterImage">
+                              <img [(ngModel)]="comentario.codigoUsuario" name="nombreDeUsuario1" ngDefaultControl src={{getFotoUsuario(comentario.codigoUsuario)}}/>
+                            </div>
+                            <div class="commentText">
+                                    <b>
+                                        <p class="usuario" [(ngModel)]="comentario.codigoUsuario" name="nombreDeUsuario" ngDefaultControl>{{getNombreUsuario(comentario.codigoUsuario)}}</p>
+                                    </b>
+                                    <p class="comentario">{{comentario.texto}}</p> <span class="date sub-text">{{comentario.fechaPublicacion}}</span>
+                                </div>
+                        </li>
+                    </ul>
+        </div>
+        <form class="form-inline" role="form">
+            <div class="form-group">
+                <input id="texto" class="form-control" type="text" placeholder="Tu comentario" />
+            </div>
+            <div class="form-group">
+                <button (click)="agregarComentario()" class="btn btn-default">Añadir</button>
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<br>
