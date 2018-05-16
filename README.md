@@ -1,5 +1,7 @@
 # Metube
 
+Developed by: Adriana Orellana, Joaquín Vargas, Ángel Zenteno, Micaela Terán, Kleizzem Bermeo, Fernanda López.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 For run `ng serve --proxy-config proxy.conf.json`
 
